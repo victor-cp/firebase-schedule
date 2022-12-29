@@ -1,7 +1,6 @@
-const express = require("express");
+const app = require("./server.js");
+const PORT = 8000;
 
-const app = express();
-
-app.listen("8000", (req, res) => {
-  console.log("aplicación iniciada en localhost://8000");
+app.listen(PORT, (req, res) => {
+  console.log(`aplicación iniciada en localhost://${PORT}`);
 });

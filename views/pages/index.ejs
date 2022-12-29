@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTS SCHEDULE</title>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container m-3">
+    <div class="navbar navbar-dark bg-primary container">
+        <p class="navbar-brand mx-auto">Firebase</p>
+    </div>
+
+
+    <div class="container p-4">
+        <p class="h4 pb-4">Contacts</p>
+        <% if (contacts.length===0) { %>
+            <p>No contacts yet</p>
+            <% } %>
+                <% if (contacts.length !==0) { %>
+                    <%- include('../partials/table'); %>
+                        <% } %>
+    </div>
+
+    <hr>
+    <div class="container p-4">
+        <p class="h4 pb-4">Add contact</p>
+        <div class="container p-1">
+            <form action=" postContact" method="post">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="form-outline">
+                            <input type="text" name="firstname" class="form-control" />
+                            <label class="form-label" for="form3Example1">First name</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <input type="text" name="lastname" class="form-control" />
+                            <label class="form-label" for="form3Example2">Last name</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="text" name="email" class="form-control" />
+                    <label class="form-label" for="form3Example3">Email address</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <input type="text" name="phone" class="form-control" />
+                    <label class="form-label" for="form3Example4">Phone</label>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Post</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

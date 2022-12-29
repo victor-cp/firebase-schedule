@@ -1,0 +1,38 @@
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr class="bg-primary text-white">
+                <th scope="col">Name</th>
+                <th scope="col">Lastname</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% contacts.forEach((contact)=> { %>
+                <tr>
+                    <td class="h5">
+                        <%= contact.firstname %>
+                    </td>
+                    <td class="h5">
+                        <%= contact.lastname %>
+                    </td>
+                    <td class="h5">
+                        <%= contact.email %>
+                    </td>
+                    <td class="h5">
+                        <%= contact.phone %>
+                    </td>
+                    <td class="text-center">
+                        <a href="/editContact/<%= contact.id %>" class="btn btn-warning">Update</a>
+                    </td>
+                    <td class="text-center">
+                        <a href="/deleteContact/<%= contact.id %>" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+                <% }) %>
+        </tbody>
+    </table>
+</div>
