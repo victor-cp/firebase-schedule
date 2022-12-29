@@ -7,9 +7,15 @@ A single page Todo App. This was implemented with react, redux, router techs and
 - [Node and npm](http://nodejs.org)
 - [Firebase]
 
-you must generate a key in firebase
-change the name of json file to firebase.json
-include in the main file
+You must generate a key in firebase
+
+Change the name of json file to firebase.json
+
+Create an file '.env', this must contain the path:
+
+- GOOGLE_APPLICATION_CREDENTIALS='...\firebase.json'
+
+Include in the main file
 
 ## Installation
 
@@ -17,3 +23,7 @@ include in the main file
 2. `npm install`
 3. `npm run dev`
 4. View in browser at `http://localhost:8000`
+
+### Resources
+
+- https://firebase.google.com/docs/admin/setup
