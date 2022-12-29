@@ -27,3 +27,9 @@ Include in the main file
 ### Resources
 
 - https://firebase.google.com/docs/admin/setup
+
+### Results
+
+![sc1](https://user-images.githubusercontent.com/69781012/210018672-3418a6a4-1c85-4168-993b-7b73ca3914d9.PNG)
+
+![image](https://user-images.githubusercontent.com/69781012/210018829-971a0b2c-ce2a-43aa-ad7b-7cb67718af39.png)
