@@ -28,7 +28,7 @@ Include in the main file
 
 - https://firebase.google.com/docs/admin/setup
 
-### Results
+## Results
 
 ![sc1](https://user-images.githubusercontent.com/69781012/210018672-3418a6a4-1c85-4168-993b-7b73ca3914d9.PNG)
 
